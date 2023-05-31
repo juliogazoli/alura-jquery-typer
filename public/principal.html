@@ -5,6 +5,7 @@
     <title>Alura Typer</title>
     <link rel="stylesheet" href="css/libs/materialize.min.css">
     <link rel="stylesheet" href="css/libs/google-fonts.css">
+    <link rel="stylesheet" href="css/libs/selectize.default.css">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
@@ -31,7 +32,7 @@
         <textarea class="campo-digitacao" rows="8" cols="40"></textarea>
 
         <div class="botoes">
-              <a class="btn-floating btn-large waves-effect waves-light red" id="botao-reiniciar">
+            <a class="btn-floating btn-large waves-effect waves-light red" id="botao-reiniciar">
                 <i class="material-icons">restore</i>
             </a>
             <a class="btn-floating btn-large waves-effect waves-light green" id="botao-placar">
@@ -44,6 +45,17 @@
                 <i class="material-icons">repeat_one</i>
             </a>
             <input type="number" id="frase-id" min="0">
+
+            <div class="select-usuarios">
+                <select id="usuarios">
+                    <option value="Julio">Julio</option>
+                    <option value="Aline">Aline</option>
+                    <option value="José">José</option>
+                    <option value="Leonardo">Leonardo</option>
+                    <option value="Eduardo">Eduardo</option>
+                </select>
+            </div>
+
             <a class="btn-floating btn-large waves-effect waves-light yellow" id="botao-sync">
                 <i class="material-icons">swap_vert</i>
             </a>
@@ -77,6 +89,7 @@
     <script src="js/main.js"></script>
     <script src="js/placar.js"></script>
     <script src="js/frase.js"></script>
+    <script src="js/selectize.js"></script>
 
 </body>
 </html>
